@@ -1,1 +1,2 @@
+Added excecution time stamp
 Added hello print msg
