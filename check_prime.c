@@ -23,4 +23,5 @@ int main ()
     }
     printf("%d is a prime no.",checkPrime);
     endTime = clock();
+    printf("\nTotal Excecution Time: %.2f\n",(double)(endTime-startTime)/CLOCKS_PER_SEC);
 }
