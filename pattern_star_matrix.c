@@ -5,10 +5,22 @@ int main ()
 {
     clock_t start_tm, end_tm;
     start_tm = clock();
-    int row, col;
-    row = 5;
-    col = 5;
 
+    int row, col;
+    
+    printf("Printing Square matrix of stars\n");
+    do
+    {
+        printf("row count\t:");
+        scanf("%d",&row);
+        printf("column count\t:");
+        scanf("%d",&col);
+        if(row <= 0 || col <= 0)
+            {
+                printf("Enter values other than 0\n");
+            }
+    } while (row <= 0 || col <= 0);
+    
     for(int rowCnt  = 0 ; rowCnt < row  ; rowCnt++)
     {
         for(int cloCnt = 0 ; cloCnt < col ; cloCnt++)
